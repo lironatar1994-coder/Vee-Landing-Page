@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Vee מחברת תיבת משימות, לוח שנה, תזכורות ופרויקטים אישיים למרחב אחד נקי ומהיר."
+    />
+    <title>Vee - ניהול משימות אישי</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/landing-assets/styles.css" />
+  </head>
+  <body>
+    <div class="loader" aria-live="polite" aria-busy="true">
+      <div class="loader__mark">
+        <img src="/landing-assets/assets/logo.png" alt="Vee" />
+        <span></span>
+      </div>
+      <p>פותחים את Vee...</p>
+    </div>
+
+    <main class="landing" id="landing">
+      <header class="nav" aria-label="ניווט ראשי">
+        <a class="brand" href="/" aria-label="Vee">
+          <img src="/landing-assets/assets/logo.png" alt="" />
+          <span>Vee</span>
+        </a>
+        <nav class="nav__links" aria-label="אזורים בעמוד">
+          <a href="#flow">איך זה עובד</a>
+          <a href="#sync">סנכרון</a>
+          <a href="#start">התחלה</a>
+        </nav>
+        <div class="nav__actions">
+          <a class="plain-link" href="/login">התחברות</a>
+          <a class="button button--small" href="/login?mode=register">להתחיל עכשיו</a>
+        </div>
+      </header>
+
+      <section class="hero">
+        <div class="hero__scene" aria-hidden="true">
+          <img class="hero__shot hero__shot--inbox" src="/landing-assets/assets/inbox.png" alt="" />
+          <img class="hero__shot hero__shot--calendar" src="/landing-assets/assets/calendar.png" alt="" />
+          <img class="hero__shot hero__shot--reminder" src="/landing-assets/assets/reminders.png" alt="" />
+        </div>
+        <div class="hero__shade"></div>
+        <div class="hero__copy reveal">
+          <p class="kicker">ניהול משימות אישי בעברית, בקצב של היום שלך</p>
+          <h1>המשימות שלך, סוף סוף במקום אחד.</h1>
+          <p class="lead">
+            Vee מחברת תיבת משימות, לוח שנה, תזכורות ופרויקטים אישיים למרחב אחד נקי ומהיר.
+          </p>
+          <div class="hero__actions">
+            <a class="button" href="/login?mode=register">להתחיל עכשיו <span>←</span></a>
+            <a class="ghost" href="/login">כבר יש לי חשבון</a>
+          </div>
+        </div>
+        <div class="hero__metrics" aria-label="יכולות מרכזיות">
+          <span>✓ משימות</span>
+          <span>▣ לוח שנה</span>
+          <span>♢ תזכורות</span>
+        </div>
+      </section>
+
+      <section class="statement">
+        <div class="statement__inner reveal">
+          <p>Vee לא מנסה להפוך אותך למנהל פרויקטים.</p>
+          <h2>היא פשוט נותנת לכל משימה מקום, זמן והקשר.</h2>
+        </div>
+      </section>
+
+      <section class="story" id="flow" aria-label="זרימת העבודה ב-Vee">
+        <article class="story__step">
+          <div class="story__copy reveal">
+            <p class="story__label">ללכוד</p>
+            <h2>מהראש ישר לתיבת המשימות</h2>
+            <p>המסך הראשון של Vee בנוי בשביל הרגע שבו משהו קופץ לראש. מוסיפים, מסמנים, ממשיכים.</p>
+          </div>
+          <figure class="product-frame reveal">
+            <img src="/landing-assets/assets/inbox.png" alt="תיבת המשימות של Vee עם רשימת משימות בעברית" />
+          </figure>
+        </article>
+
+        <article class="story__step story__step--soft">
+          <div class="story__copy reveal">
+            <p class="story__label">לתזמן</p>
+            <h2>המשימה מקבלת זמן בלי לפתוח יומן חדש</h2>
+            <p>תאריך, שעה ותזכורת נפתחים בדיוק במקום שבו כותבים את המשימה.</p>
+          </div>
+          <figure class="product-frame product-frame--narrow reveal">
+            <img src="/landing-assets/assets/date-picker.png" alt="חלון בחירת תאריך במשימה חדשה ב-Vee" />
+          </figure>
+        </article>
+
+        <article class="story__step">
+          <div class="story__copy reveal">
+            <p class="story__label">לראות</p>
+            <h2>היום והחודש נמצאים באותו קצב</h2>
+            <p>כשמשימה עוברת ללוח השנה, היא נשארת חלק מהיום שלך ולא עוד אירוע מנותק.</p>
+          </div>
+          <figure class="product-frame reveal">
+            <img src="/landing-assets/assets/calendar.png" alt="תצוגת לוח שנה חודשית של Vee" />
+          </figure>
+        </article>
+      </section>
+
+      <section class="detail" id="sync" aria-label="תזמון וסנכרון">
+        <div class="detail__copy reveal">
+          <p class="kicker">הפרטים הקטנים הם אלה שמחזיקים את היום</p>
+          <h2>זמן, תזכורת וסנכרון Google Calendar באותה זרימה.</h2>
+          <p>במקום לקפוץ בין אפליקציות, Vee משאירה את פעולת התזמון בתוך המשימה עצמה.</p>
+          <div class="proof-row">
+            <span>✓ פרטי ומאובטח</span>
+            <span>↻ מסונכרן דו-כיווני</span>
+          </div>
+        </div>
+        <div class="detail__stack" aria-label="מסכי תזמון">
+          <img class="detail__image detail__image--google reveal" src="/landing-assets/assets/google-calendar.png" alt="מסך חיבור Google Calendar ל-Vee" />
+          <img class="detail__image detail__image--time reveal" src="/landing-assets/assets/time-picker.png" alt="בחירת זמן למשימה ב-Vee" />
+          <img class="detail__image detail__image--reminder reveal" src="/landing-assets/assets/reminders.png" alt="בחירת תזכורת למשימה ב-Vee" />
+        </div>
+      </section>
+
+      <section class="benefits" aria-label="יתרונות">
+        <div class="benefits__header reveal">
+          <p class="kicker">פשוט מספיק ליום רגיל</p>
+          <h2>בלי רעש. בלי מערכת כבדה. רק סדר אישי שעובד.</h2>
+        </div>
+        <div class="benefits__grid">
+          <article class="benefit reveal">
+            <span>◎</span>
+            <h3>תיבת משימות נקייה</h3>
+            <p>כל מה שעובר בראש נכנס מהר לרשימה אחת, בלי לפתוח עוד חמישה מקומות.</p>
+          </article>
+          <article class="benefit reveal">
+            <span>▣</span>
+            <h3>לוח שנה מחובר</h3>
+            <p>משימות ואירועים חיים ביחד, עם חיבור Google Calendar כשצריך.</p>
+          </article>
+          <article class="benefit reveal">
+            <span>◷</span>
+            <h3>תזכורות בזמן הנכון</h3>
+            <p>זמן, תאריך ותזכורת נשארים צמודים למשימה ולא הולכים לאיבוד.</p>
+          </article>
+          <article class="benefit reveal">
+            <span>◇</span>
+            <h3>פרויקטים אישיים</h3>
+            <p>בית, עבודה וסידורים נשארים מופרדים בלי להרגיש כמו מערכת כבדה.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="final" id="start">
+        <div class="reveal">
+          <p class="kicker">אפשר להתחיל קטן</p>
+          <h2>תכניס משימה אחת. Vee כבר תיתן לה מקום ביום שלך.</h2>
+        </div>
+        <a class="button reveal" href="/login?mode=register">להתחיל עכשיו <span>←</span></a>
+      </section>
+    </main>
+
+    <script src="/landing-assets/script.js"></script>
+  </body>
+</html>
