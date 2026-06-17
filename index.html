@@ -7,7 +7,20 @@
       name="description"
       content="Vee מחברת תיבת משימות, לוח שנה, תזכורות ופרויקטים אישיים למרחב אחד נקי ומהיר."
     />
-    <title>Vee - ניהול משימות אישי</title>
+    <meta name="theme-color" content="#0A74DA" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="he_IL" />
+    <meta property="og:title" content="Vee - ניהול משימות אישי בעברית" />
+    <meta
+      property="og:description"
+      content="תיבת משימות, תזכורות, לוח שנה וסנכרון Google Calendar במקום אחד נקי."
+    />
+    <meta property="og:image" content="https://vee-app.co.il/landing-assets/assets/inbox.png" />
+    <meta property="og:url" content="https://vee-app.co.il/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Vee - ניהול משימות אישי בעברית</title>
+    <link rel="icon" href="/landing-assets/assets/logo.png" />
+    <link rel="apple-touch-icon" href="/landing-assets/assets/logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
@@ -35,7 +48,7 @@
         </nav>
         <div class="nav__actions">
           <a class="plain-link" href="/login">התחברות</a>
-          <a class="button button--small" href="/login?mode=register">להתחיל עכשיו</a>
+          <a class="button button--small" href="/login?mode=register">להוסיף משימה ראשונה</a>
         </div>
       </header>
 
@@ -53,8 +66,29 @@
             Vee מחברת תיבת משימות, לוח שנה, תזכורות ופרויקטים אישיים למרחב אחד נקי ומהיר.
           </p>
           <div class="hero__actions">
-            <a class="button" href="/login?mode=register">להתחיל עכשיו <span>←</span></a>
+            <a class="button" href="/login?mode=register">להתחיל לסדר את היום שלי <span>←</span></a>
             <a class="ghost" href="/login">כבר יש לי חשבון</a>
+          </div>
+        </div>
+        <div class="hero__mockup reveal" aria-label="תצוגת מוצר של Vee">
+          <div class="app-window">
+            <div class="app-window__bar">
+              <span></span>
+              <span></span>
+              <span></span>
+              <b>תיבת המשימות</b>
+            </div>
+            <div class="app-window__screen">
+              <img src="/landing-assets/assets/inbox.png" alt="מסך תיבת המשימות של Vee" />
+            </div>
+          </div>
+          <div class="floating-card floating-card--date">
+            <b>היום</b>
+            <span>3 משימות מתוזמנות</span>
+          </div>
+          <div class="floating-card floating-card--sync">
+            <b>Google Calendar</b>
+            <span>סנכרון דו-כיווני מאובטח</span>
           </div>
         </div>
         <div class="mobile-showcase reveal" aria-label="הצצה מהירה ל-Vee במובייל">
@@ -105,6 +139,7 @@
             <p>המסך הראשון של Vee בנוי בשביל הרגע שבו משהו קופץ לראש. מוסיפים, מסמנים, ממשיכים.</p>
           </div>
           <figure class="product-frame reveal">
+            <figcaption>תיבת משימות נקייה</figcaption>
             <img src="/landing-assets/assets/inbox.png" alt="תיבת המשימות של Vee עם רשימת משימות בעברית" />
           </figure>
         </article>
@@ -116,6 +151,7 @@
             <p>תאריך, שעה ותזכורת נפתחים בדיוק במקום שבו כותבים את המשימה.</p>
           </div>
           <figure class="product-frame product-frame--narrow reveal">
+            <figcaption>בחירת תאריך בלי לצאת מהמשימה</figcaption>
             <img src="/landing-assets/assets/date-picker.png" alt="חלון בחירת תאריך במשימה חדשה ב-Vee" />
           </figure>
         </article>
@@ -127,6 +163,7 @@
             <p>כשמשימה עוברת ללוח השנה, היא נשארת חלק מהיום שלך ולא עוד אירוע מנותק.</p>
           </div>
           <figure class="product-frame reveal">
+            <figcaption>לוח שנה אישי ומסודר</figcaption>
             <img src="/landing-assets/assets/calendar.png" alt="תצוגת לוח שנה חודשית של Vee" />
           </figure>
         </article>
@@ -140,6 +177,10 @@
           <div class="proof-row">
             <span>✓ פרטי ומאובטח</span>
             <span>↻ מסונכרן דו-כיווני</span>
+          </div>
+          <div class="trust-note">
+            <strong>החיבור ליומן משמש רק לסנכרון משימות ואירועים.</strong>
+            <span>Vee לא מפרסמת, לא משתפת ולא משתמשת במידע מהיומן למטרה אחרת.</span>
           </div>
         </div>
         <div class="detail__stack" aria-label="מסכי תזמון">
@@ -155,25 +196,37 @@
           <h2>בלי רעש. בלי מערכת כבדה. רק סדר אישי שעובד.</h2>
         </div>
         <div class="benefits__grid">
-          <article class="benefit reveal">
+          <article class="benefit benefit--wide reveal">
             <span>◎</span>
             <h3>תיבת משימות נקייה</h3>
             <p>כל מה שעובר בראש נכנס מהר לרשימה אחת, בלי לפתוח עוד חמישה מקומות.</p>
+            <div class="mini-task-list" aria-hidden="true">
+              <i></i><i></i><i></i>
+            </div>
           </article>
-          <article class="benefit reveal">
+          <article class="benefit benefit--calendar reveal">
             <span>▣</span>
             <h3>לוח שנה מחובר</h3>
             <p>משימות ואירועים חיים ביחד, עם חיבור Google Calendar כשצריך.</p>
+            <div class="mini-calendar" aria-hidden="true">
+              <b></b><b></b><b></b><b></b><b></b><b></b>
+            </div>
           </article>
-          <article class="benefit reveal">
+          <article class="benefit benefit--reminder reveal">
             <span>◷</span>
             <h3>תזכורות בזמן הנכון</h3>
             <p>זמן, תאריך ותזכורת נשארים צמודים למשימה ולא הולכים לאיבוד.</p>
+            <div class="mini-chip-row" aria-hidden="true">
+              <em>היום</em><em>15 דק׳ לפני</em>
+            </div>
           </article>
-          <article class="benefit reveal">
+          <article class="benefit benefit--projects reveal">
             <span>◇</span>
             <h3>פרויקטים אישיים</h3>
             <p>בית, עבודה וסידורים נשארים מופרדים בלי להרגיש כמו מערכת כבדה.</p>
+            <div class="mini-folders" aria-hidden="true">
+              <i>בית</i><i>עבודה</i><i>סידורים</i>
+            </div>
           </article>
         </div>
       </section>
@@ -183,13 +236,13 @@
           <p class="kicker">אפשר להתחיל קטן</p>
           <h2>תכניס משימה אחת. Vee כבר תיתן לה מקום ביום שלך.</h2>
         </div>
-        <a class="button reveal" href="/login?mode=register">להתחיל עכשיו <span>←</span></a>
+        <a class="button reveal" href="/login?mode=register">להוסיף משימה ראשונה <span>←</span></a>
       </section>
     </main>
 
     <nav class="mobile-dock" aria-label="פעולות מהירות">
       <a class="mobile-dock__secondary" href="/login">התחברות</a>
-      <a class="mobile-dock__primary" href="/login?mode=register">להתחיל עכשיו</a>
+      <a class="mobile-dock__primary" href="/login?mode=register">להוסיף משימה</a>
     </nav>
 
     <script src="/landing-assets/script.js"></script>
