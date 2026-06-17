@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Vee מחברת תיבת משימות, לוח שנה, תזכורות ופרויקטים אישיים למרחב אחד נקי ומהיר."
+      content="Vee עוזרת לרוקן את הראש, לתפוס משימות בשנייה ולסדר את היום בלי מערכת ניהול פרויקטים כבדה."
     />
     <meta name="theme-color" content="#0A74DA" />
     <meta property="og:type" content="website" />
@@ -13,7 +13,7 @@
     <meta property="og:title" content="Vee - ניהול משימות אישי בעברית" />
     <meta
       property="og:description"
-      content="תיבת משימות, תזכורות, לוח שנה וסנכרון Google Calendar במקום אחד נקי."
+      content="ניהול משימות אישי בעברית: לכידה מהירה, תזכורות, לוח שנה ופרטיות בלי פרסומות ובלי כריית מידע."
     />
     <meta property="og:image" content="https://vee-app.co.il/landing-assets/assets/inbox.png" />
     <meta property="og:url" content="https://vee-app.co.il/" />
@@ -24,7 +24,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/landing-assets/styles.css?v=20260617-calm-hero" />
+    <link rel="stylesheet" href="/landing-assets/styles.css?v=20260617-zero-bloat" />
   </head>
   <body>
     <div class="loader" aria-live="polite" aria-busy="true">
@@ -65,33 +65,64 @@
         </div>
         <div class="hero__shade"></div>
         <div class="hero__copy reveal">
-          <p class="kicker">ניהול משימות אישי בעברית, בקצב של היום שלך</p>
-          <h1>המשימות שלך, סוף סוף במקום אחד.</h1>
-          <p class="lead">Vee מחברת משימות, תזכורות ולוח שנה — למרחב אחד נקי ומהיר.</p>
+          <p class="kicker">אפס בלאגן. אפס ניהול-יתר.</p>
+          <h1>לנהל את היום שלך. בלי להיות מנהל פרויקטים.</h1>
+          <p class="lead">זורקים משימה בשנייה, נותנים לה זמן אם צריך, וממשיכים. בלי פרסומות, בלי כריית מידע, ובלי מערכת שמנסה לנהל אותך.</p>
           <div class="hero__actions">
             <a class="button" href="/login?mode=register">להתחיל לסדר את היום שלי <span>←</span></a>
             <a class="ghost" href="/login">כבר יש לי חשבון</a>
           </div>
         </div>
         <div class="hero__mockup reveal" aria-label="תצוגת מוצר של Vee">
-          <div class="app-window">
+          <div class="app-window app-window--demo">
             <div class="app-window__bar">
-              <span></span>
-              <span></span>
-              <span></span>
-              <b>תיבת המשימות</b>
+              <div class="app-window__dots" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <b>Vee</b>
             </div>
-            <div class="app-window__screen">
-              <img src="/landing-assets/assets/inbox.png" alt="מסך תיבת המשימות של Vee" />
+            <div class="app-window__screen app-window__screen--demo">
+              <div class="demo-editor">
+                <div class="demo-editor__top">
+                  <span>תיבת המשימות</span>
+                  <strong>היום</strong>
+                </div>
+                <div class="demo-editor__input">
+                  <span></span>
+                  <b>לכתוב הצעת מחיר עד 11:00</b>
+                </div>
+                <div class="demo-editor__row demo-editor__row--active">
+                  <i></i>
+                  <span>להתקשר לרופא</span>
+                  <em>09:30</em>
+                </div>
+                <div class="demo-editor__row">
+                  <i></i>
+                  <span>לשלוח חשבונית</span>
+                  <em>היום</em>
+                </div>
+                <div class="demo-editor__row">
+                  <i></i>
+                  <span>לקנות מתנה לאמא</span>
+                  <em>מחר</em>
+                </div>
+                <div class="demo-editor__privacy">
+                  <span>בלי פרסומות</span>
+                  <span>בלי כריית מידע</span>
+                  <span>רק המשימות שלך</span>
+                </div>
+              </div>
             </div>
           </div>
           <div class="floating-card floating-card--date">
-            <b>היום</b>
-            <span>3 משימות מתוזמנות</span>
+            <b>לכידה מהירה</b>
+            <span>משימה נכנסת לפני שהיא בורחת</span>
           </div>
           <div class="floating-card floating-card--sync">
-            <b>Google Calendar</b>
-            <span>סנכרון דו-כיווני מאובטח</span>
+            <b>פרטי כברירת מחדל</b>
+            <span>בלי פרסומות ובלי מכירת מידע</span>
           </div>
         </div>
         <div class="mobile-showcase reveal" aria-label="הצצה מהירה ל-Vee במובייל">
@@ -99,33 +130,42 @@
             <img class="mobile-showcase__phone mobile-showcase__phone--main" src="/landing-assets/assets/inbox.png" alt="" />
           </div>
           <div class="mobile-showcase__chips">
-            <span>לכידה מהירה</span>
-            <span>תזכורת</span>
-            <span>לוח שנה</span>
+            <span>שנייה להוסיף</span>
+            <span>בלי פרסומות</span>
+            <span>בלי קנבן</span>
           </div>
         </div>
         <div class="hero-trust-pill" aria-label="יכולות מרכזיות">
-          משימות <span>·</span> תזכורות <span>·</span> לוח שנה <span>·</span> Google Calendar
+          לכידה מהירה <span>·</span> תזכורות <span>·</span> לוח שנה <span>·</span> פרטיות
         </div>
         <div class="hero__metrics" aria-label="יכולות מרכזיות">
-          <span>✓ משימות</span>
-          <span>▣ לוח שנה</span>
-          <span>♢ תזכורות</span>
+          <span>✓ לכידה בשנייה</span>
+          <span>▣ בלי בלאגן</span>
+          <span>♢ פרטי ונקי</span>
         </div>
       </section>
 
       <section class="mobile-strip" aria-label="המסלול המהיר במובייל">
         <div class="mobile-strip__item reveal">
           <b>1</b>
-          <span>מוסיפים משימה</span>
+          <div>
+            <span>מרוקנים את הראש</span>
+            <p>מוסיפים משימות בשנייה לפני שהן בורחות.</p>
+          </div>
         </div>
         <div class="mobile-strip__item reveal">
           <b>2</b>
-          <span>נותנים לה זמן</span>
+          <div>
+            <span>עושים סדר</span>
+            <p>נותנים לכל משימה את הזמן שלה, בלי תפריטים מסובכים.</p>
+          </div>
         </div>
         <div class="mobile-strip__item reveal">
           <b>3</b>
-          <span>רואים אותה ביום</span>
+          <div>
+            <span>מתחילים לעבוד</span>
+            <p>קמים לתצוגה נקייה של מה שבאמת צריך לעשות היום.</p>
+          </div>
         </div>
       </section>
 
@@ -139,9 +179,9 @@
       <section class="story" id="flow" aria-label="זרימת העבודה ב-Vee">
         <article class="story__step">
           <div class="story__copy reveal">
-            <p class="story__label">ללכוד</p>
-            <h2>מהראש ישר לתיבת המשימות</h2>
-            <p>המסך הראשון של Vee בנוי בשביל הרגע שבו משהו קופץ לראש. מוסיפים, מסמנים, ממשיכים.</p>
+            <p class="story__label">1</p>
+            <h2>מרוקנים את הראש</h2>
+            <p>מוסיפים משימות בשנייה לפני שהן בורחות. בלי לבחור פרויקט, תגית, סטטוס או שדה שאף אחד לא צריך.</p>
           </div>
           <figure class="product-frame reveal">
             <figcaption>תיבת משימות נקייה</figcaption>
@@ -151,9 +191,9 @@
 
         <article class="story__step story__step--soft">
           <div class="story__copy reveal">
-            <p class="story__label">לתזמן</p>
-            <h2>המשימה מקבלת זמן בלי לפתוח יומן חדש</h2>
-            <p>תאריך, שעה ותזכורת נפתחים בדיוק במקום שבו כותבים את המשימה.</p>
+            <p class="story__label">2</p>
+            <h2>עושים סדר</h2>
+            <p>נותנים לכל משימה את הזמן שלה, בלי תפריטים מסובכים ובלי להרגיש שעברתם לעבוד במערכת ניהול.</p>
           </div>
           <figure class="product-frame product-frame--narrow reveal">
             <figcaption>בחירת תאריך בלי לצאת מהמשימה</figcaption>
@@ -163,15 +203,40 @@
 
         <article class="story__step">
           <div class="story__copy reveal">
-            <p class="story__label">לראות</p>
-            <h2>היום והחודש נמצאים באותו קצב</h2>
-            <p>כשמשימה עוברת ללוח השנה, היא נשארת חלק מהיום שלך ולא עוד אירוע מנותק.</p>
+            <p class="story__label">3</p>
+            <h2>מתחילים לעבוד</h2>
+            <p>קמים בבוקר לתצוגה נקייה של מה שבאמת צריך לעשות היום. לא דשבורד, לא צוות, לא רעש.</p>
           </div>
           <figure class="product-frame reveal">
             <figcaption>לוח שנה אישי ומסודר</figcaption>
             <img src="/landing-assets/assets/calendar.png" alt="תצוגת לוח שנה חודשית של Vee" />
           </figure>
         </article>
+      </section>
+
+      <section class="anti-features" aria-label="מה שאין ב-Vee">
+        <div class="anti-features__header reveal">
+          <p class="kicker">מה שאין ב-Vee</p>
+          <h2>הפוקוס נשמר גם בזכות הדברים שהשארנו בחוץ.</h2>
+        </div>
+        <div class="anti-features__grid">
+          <article class="anti-feature reveal">
+            <span>—</span>
+            <p>בלי תגיות ותתי-תגיות מסובכות</p>
+          </article>
+          <article class="anti-feature reveal">
+            <span>—</span>
+            <p>בלי לוחות קנבן עמוסים</p>
+          </article>
+          <article class="anti-feature reveal">
+            <span>—</span>
+            <p>בלי רעש של ניהול צוותים</p>
+          </article>
+          <article class="anti-feature anti-feature--quiet reveal">
+            <span>✓</span>
+            <p>רק אתם, המחשבות שלכם, והיום שלכם.</p>
+          </article>
+        </div>
       </section>
 
       <section class="detail" id="sync" aria-label="תזמון וסנכרון">
@@ -250,6 +315,6 @@
       <a class="mobile-dock__primary" href="/login?mode=register">להתחיל בחינם</a>
     </nav>
 
-    <script src="/landing-assets/script.js?v=20260617-calm-hero"></script>
+    <script src="/landing-assets/script.js?v=20260617-zero-bloat"></script>
   </body>
 </html>

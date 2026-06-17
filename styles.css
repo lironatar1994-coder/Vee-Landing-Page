@@ -308,8 +308,8 @@ img {
 
 .hero h1 {
   margin-top: 18px;
-  font-size: clamp(3.4rem, 6.6vw, 6.15rem);
-  line-height: 0.94;
+  font-size: clamp(3rem, 5.4vw, 5rem);
+  line-height: 1;
   font-weight: 900;
   text-wrap: balance;
 }
@@ -391,22 +391,28 @@ img {
   background: rgba(255, 255, 255, 0.72);
 }
 
-.app-window__bar span {
+.app-window__dots {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.app-window__dots span {
   width: 10px;
   height: 10px;
   border-radius: 999px;
   background: #d8e1ee;
 }
 
-.app-window__bar span:nth-child(1) {
+.app-window__dots span:nth-child(1) {
   background: #78d7c1;
 }
 
-.app-window__bar span:nth-child(2) {
+.app-window__dots span:nth-child(2) {
   background: #f3bf63;
 }
 
-.app-window__bar span:nth-child(3) {
+.app-window__dots span:nth-child(3) {
   background: #eb7b75;
 }
 
@@ -426,6 +432,124 @@ img {
   width: 112%;
   max-width: none;
   transform: translateX(4%) translateY(-2%);
+}
+
+.app-window--demo {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(249, 251, 255, 0.9)),
+    #fff;
+}
+
+.app-window__screen--demo {
+  height: 482px;
+  display: grid;
+  place-items: center;
+  padding: 28px;
+  background:
+    linear-gradient(90deg, rgba(10, 116, 218, 0.04) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(26, 26, 36, 0.035) 1px, transparent 1px),
+    #fbfcff;
+  background-size: 44px 44px;
+}
+
+.demo-editor {
+  width: min(520px, 100%);
+  display: grid;
+  gap: 12px;
+  padding: 22px;
+  border: 1px solid rgba(184, 196, 211, 0.82);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 26px 64px rgba(25, 39, 62, 0.12);
+}
+
+.demo-editor__top,
+.demo-editor__input,
+.demo-editor__row,
+.demo-editor__privacy {
+  display: flex;
+  align-items: center;
+}
+
+.demo-editor__top {
+  justify-content: space-between;
+  color: var(--muted);
+  font-weight: 900;
+}
+
+.demo-editor__top strong {
+  color: var(--ink);
+}
+
+.demo-editor__input {
+  gap: 10px;
+  min-height: 58px;
+  padding: 0 14px;
+  border: 1px solid rgba(10, 116, 218, 0.2);
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(10, 116, 218, 0.08), rgba(255, 255, 255, 0.92));
+}
+
+.demo-editor__input span {
+  width: 10px;
+  height: 10px;
+  flex: 0 0 auto;
+  border-radius: 999px;
+  background: var(--blue);
+  box-shadow: 0 0 0 6px rgba(10, 116, 218, 0.1);
+}
+
+.demo-editor__input b {
+  color: var(--ink);
+  font-size: 1rem;
+}
+
+.demo-editor__row {
+  gap: 10px;
+  min-height: 48px;
+  padding: 0 14px;
+  border: 1px solid rgba(223, 230, 239, 0.9);
+  border-radius: 14px;
+  background: #fff;
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.demo-editor__row--active {
+  border-color: rgba(10, 116, 218, 0.22);
+  background: rgba(231, 240, 255, 0.6);
+}
+
+.demo-editor__row i {
+  width: 17px;
+  height: 17px;
+  flex: 0 0 auto;
+  border: 2px solid #aeb8c7;
+  border-radius: 999px;
+}
+
+.demo-editor__row em {
+  margin-inline-start: auto;
+  color: var(--blue);
+  font-style: normal;
+  font-size: 0.82rem;
+  font-weight: 900;
+}
+
+.demo-editor__privacy {
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 8px;
+}
+
+.demo-editor__privacy span {
+  padding: 7px 10px;
+  border: 1px solid rgba(184, 196, 211, 0.74);
+  border-radius: 999px;
+  background: #fff;
+  color: rgba(52, 64, 84, 0.78);
+  font-size: 0.78rem;
+  font-weight: 900;
 }
 
 .floating-card {
@@ -682,6 +806,76 @@ img {
     radial-gradient(ellipse at 0% 20%, rgba(23, 183, 214, 0.12), transparent 36%),
     linear-gradient(180deg, #fff 0%, #f8fafc 100%);
   border-block: 1px solid var(--line);
+}
+
+.anti-features {
+  padding: clamp(82px, 10vw, 136px) clamp(22px, 7vw, 116px);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(248, 250, 252, 0.96)),
+    #fff;
+  border-top: 1px solid var(--line);
+}
+
+.anti-features__header {
+  max-width: 760px;
+}
+
+.anti-features__header h2 {
+  margin-top: 14px;
+  font-size: clamp(2rem, 4.4vw, 4.6rem);
+  line-height: 1.05;
+  font-weight: 900;
+  text-wrap: balance;
+}
+
+.anti-features__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: clamp(32px, 5vw, 54px);
+}
+
+.anti-feature {
+  min-height: 172px;
+  display: grid;
+  align-content: space-between;
+  gap: 24px;
+  padding: 20px;
+  border: 1px solid rgba(223, 230, 239, 0.96);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.84);
+  box-shadow: 0 16px 38px rgba(25, 39, 62, 0.05);
+}
+
+.anti-feature span {
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(184, 196, 211, 0.78);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+.anti-feature p {
+  color: var(--ink);
+  font-size: 1.08rem;
+  line-height: 1.45;
+  font-weight: 900;
+}
+
+.anti-feature--quiet {
+  background:
+    linear-gradient(135deg, rgba(10, 116, 218, 0.1), rgba(255, 255, 255, 0.9)),
+    #fff;
+}
+
+.anti-feature--quiet span {
+  border-color: rgba(10, 116, 218, 0.2);
+  background: var(--blue);
+  color: #fff;
 }
 
 .detail__copy {
@@ -991,6 +1185,10 @@ img {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .anti-features__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .benefit,
   .benefit--calendar,
   .benefit--reminder {
@@ -1238,10 +1436,10 @@ img {
 
   .mobile-strip__item {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 12px;
-    min-height: 58px;
-    padding: 10px 12px;
+    min-height: 76px;
+    padding: 13px 12px;
     border: 1px solid rgba(184, 196, 211, 0.78);
     border-radius: 18px;
     background: rgba(255, 255, 255, 0.82);
@@ -1260,13 +1458,23 @@ img {
   }
 
   .mobile-strip__item span {
+    display: block;
     font-weight: 900;
     color: var(--ink);
+  }
+
+  .mobile-strip__item p {
+    margin-top: 3px;
+    color: var(--muted);
+    font-size: 0.88rem;
+    line-height: 1.45;
+    font-weight: 700;
   }
 
   .statement,
   .story__step,
   .detail,
+  .anti-features,
   .benefits,
   .final {
     padding-right: 16px;
@@ -1352,6 +1560,32 @@ img {
   .benefits__grid {
     grid-template-columns: 1fr;
     gap: 10px;
+  }
+
+  .anti-features {
+    padding-top: 62px;
+    padding-bottom: 62px;
+  }
+
+  .anti-features__header h2 {
+    font-size: clamp(2rem, 10vw, 3.05rem);
+    line-height: 1.06;
+  }
+
+  .anti-features__grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 28px;
+  }
+
+  .anti-feature {
+    min-height: 116px;
+    padding: 18px;
+    border-radius: 18px;
+  }
+
+  .anti-feature p {
+    font-size: 1rem;
   }
 
   .benefit {
