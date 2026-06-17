@@ -144,9 +144,12 @@ log "Reloading Nginx..."
 systemctl reload nginx
 
 log "Verifying landing page response..."
-if curl -fsS https://vee-app.co.il/ | grep -q "landing-assets/styles.css"; then
+HEALTH_FILE="$(mktemp)"
+if curl -fsS https://vee-app.co.il/ -o "$HEALTH_FILE" && grep -q "landing-assets/styles.css" "$HEALTH_FILE"; then
+    rm -f "$HEALTH_FILE"
     log "Landing page health check passed." "SUCCESS"
 else
+    rm -f "$HEALTH_FILE"
     log "Landing page health check failed." "ERROR"
     exit 1
 fi
