@@ -43,7 +43,23 @@
   }
 
   var heroScene = document.querySelector('.hero__scene');
+  var nav = document.querySelector('.nav');
+  var menuButton = document.querySelector('.menu-button');
   var ticking = false;
+
+  if (nav && menuButton) {
+    menuButton.addEventListener('click', function () {
+      var isOpen = nav.classList.toggle('is-open');
+      menuButton.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    nav.querySelectorAll('.nav__links a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        nav.classList.remove('is-open');
+        menuButton.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
 
   function updateHero() {
     ticking = false;

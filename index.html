@@ -24,7 +24,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/landing-assets/styles.css?v=20260617-premium" />
+    <link rel="stylesheet" href="/landing-assets/styles.css?v=20260617-mobile-refine" />
   </head>
   <body>
     <div class="loader" aria-live="polite" aria-busy="true">
@@ -41,15 +41,20 @@
           <img src="/landing-assets/assets/logo.png" alt="" />
           <span>Vee</span>
         </a>
-        <nav class="nav__links" aria-label="אזורים בעמוד">
+        <nav class="nav__links" id="mobile-menu" aria-label="אזורים בעמוד">
           <a href="#flow">איך זה עובד</a>
           <a href="#sync">סנכרון</a>
           <a href="#start">התחלה</a>
         </nav>
         <div class="nav__actions">
           <a class="plain-link" href="/login">התחברות</a>
-          <a class="button button--small" href="/login?mode=register">להוסיף משימה ראשונה</a>
+          <a class="button button--small" href="/login?mode=register">להתחיל בחינם</a>
         </div>
+        <button class="menu-button" type="button" aria-label="פתח תפריט" aria-controls="mobile-menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </header>
 
       <section class="hero">
@@ -62,9 +67,10 @@
         <div class="hero__copy reveal">
           <p class="kicker">ניהול משימות אישי בעברית, בקצב של היום שלך</p>
           <h1>המשימות שלך, סוף סוף במקום אחד.</h1>
-          <p class="lead">
-            Vee מחברת תיבת משימות, לוח שנה, תזכורות ופרויקטים אישיים למרחב אחד נקי ומהיר.
-          </p>
+          <p class="lead">Vee מחברת משימות, תזכורות, לוח שנה ופרויקטים אישיים — למרחב אחד נקי ומהיר.</p>
+          <div class="hero-trust-pill" aria-label="יכולות מרכזיות">
+            משימות <span>·</span> תזכורות <span>·</span> לוח שנה <span>·</span> Google Calendar
+          </div>
           <div class="hero__actions">
             <a class="button" href="/login?mode=register">להתחיל לסדר את היום שלי <span>←</span></a>
             <a class="ghost" href="/login">כבר יש לי חשבון</a>
@@ -94,7 +100,6 @@
         <div class="mobile-showcase reveal" aria-label="הצצה מהירה ל-Vee במובייל">
           <div class="mobile-showcase__rail" aria-hidden="true">
             <img class="mobile-showcase__phone mobile-showcase__phone--main" src="/landing-assets/assets/inbox.png" alt="" />
-            <img class="mobile-showcase__phone mobile-showcase__phone--float" src="/landing-assets/assets/date-picker.png" alt="" />
           </div>
           <div class="mobile-showcase__chips">
             <span>לכידה מהירה</span>
@@ -242,9 +247,9 @@
 
     <nav class="mobile-dock" aria-label="פעולות מהירות">
       <a class="mobile-dock__secondary" href="/login">התחברות</a>
-      <a class="mobile-dock__primary" href="/login?mode=register">להוסיף משימה</a>
+      <a class="mobile-dock__primary" href="/login?mode=register">להתחיל בחינם</a>
     </nav>
 
-    <script src="/landing-assets/script.js?v=20260617-premium"></script>
+    <script src="/landing-assets/script.js?v=20260617-mobile-refine"></script>
   </body>
 </html>
