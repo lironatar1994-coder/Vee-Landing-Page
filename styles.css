@@ -324,11 +324,14 @@ img {
 }
 
 .hero-trust-pill {
-  display: inline-flex;
+  display: none;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   gap: 8px;
-  margin-top: 22px;
+  width: fit-content;
+  max-width: min(620px, 100%);
+  margin: 28px auto 0;
   padding: 9px 14px;
   border: 1px solid rgba(184, 196, 211, 0.78);
   border-radius: 999px;
@@ -1089,7 +1092,7 @@ img {
     padding: 0 14px;
     border-radius: 14px;
     font-size: 0.84rem;
-    box-shadow: 0 12px 26px rgba(10, 116, 218, 0.2);
+    box-shadow: 0 10px 22px rgba(10, 116, 218, 0.16);
   }
 
   .menu-button {
@@ -1101,7 +1104,7 @@ img {
   .hero {
     min-height: auto;
     display: block;
-    padding: 114px 18px 46px;
+    padding: 124px 18px 56px;
     overflow: visible;
     text-align: center;
   }
@@ -1126,34 +1129,36 @@ img {
   }
 
   .kicker {
-    max-width: 320px;
-    margin-inline: auto;
-    font-size: 0.86rem;
-    line-height: 1.5;
+    display: none;
   }
 
   .hero h1 {
-    max-width: 330px;
-    margin: 17px auto 0;
-    font-size: clamp(2.18rem, 10.6vw, 2.9rem);
-    line-height: 1.06;
+    max-width: 318px;
+    margin: 0 auto;
+    font-size: clamp(2.06rem, 10vw, 2.72rem);
+    line-height: 1.08;
+    font-weight: 800;
     letter-spacing: 0;
   }
 
   .lead {
-    max-width: 334px;
-    margin: 20px auto 0;
-    font-size: 1rem;
-    line-height: 1.68;
+    max-width: 316px;
+    margin: 19px auto 0;
+    font-size: 0.98rem;
+    line-height: 1.64;
+    font-weight: 700;
   }
 
   .hero-trust-pill {
-    justify-content: center;
-    max-width: 330px;
+    display: inline-flex;
+    max-width: 315px;
     margin: 18px auto 0;
-    padding: 8px 12px;
-    font-size: 0.78rem;
-    line-height: 1.45;
+    padding: 7px 11px;
+    color: rgba(52, 64, 84, 0.82);
+    font-size: 0.74rem;
+    line-height: 1.48;
+    font-weight: 800;
+    box-shadow: none;
   }
 
   .hero__actions {
@@ -1166,9 +1171,13 @@ img {
   .hero__actions .button,
   .hero__actions .ghost {
     width: auto;
-    min-height: 50px;
+    min-height: 48px;
     border-radius: 16px;
     padding: 0 20px;
+  }
+
+  .hero__actions .button {
+    box-shadow: 0 16px 34px rgba(10, 116, 218, 0.22);
   }
 
   .hero__actions .ghost {
@@ -1186,21 +1195,34 @@ img {
   }
 
   .mobile-showcase__rail {
-    min-height: 350px;
-    margin-top: 40px;
-    border-radius: 26px;
+    min-height: 330px;
+    margin-top: 52px;
+    border-radius: 28px;
     contain: paint;
     background:
       linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(246, 248, 252, 0.86)),
-      radial-gradient(ellipse at 50% 0%, rgba(124, 92, 255, 0.12), transparent 45%);
-    box-shadow: 0 24px 60px rgba(25, 39, 62, 0.12);
+      radial-gradient(ellipse at 50% 0%, rgba(124, 92, 255, 0.08), transparent 45%);
+    box-shadow: 0 22px 54px rgba(25, 39, 62, 0.1);
   }
 
   .mobile-showcase__phone--main {
-    width: min(620px, 170vw);
+    width: min(585px, 160vw);
     top: 34px;
     border-radius: 20px;
-    box-shadow: 0 24px 58px rgba(25, 39, 62, 0.14);
+    box-shadow: 0 22px 50px rgba(25, 39, 62, 0.12);
+  }
+
+  .mobile-showcase__chips {
+    margin-top: 14px;
+    justify-content: center;
+  }
+
+  .mobile-showcase__chips span {
+    padding: 7px 10px;
+    color: rgba(26, 26, 36, 0.72);
+    font-size: 0.78rem;
+    font-weight: 800;
+    box-shadow: none;
   }
 
   .mobile-showcase__phone--float {
