@@ -144,7 +144,7 @@ log "Reloading Nginx..."
 systemctl reload nginx
 
 log "Verifying landing page response..."
-if curl -fsS https://vee-app.co.il/ | grep -q "המשימות שלך"; then
+if curl -fsS https://vee-app.co.il/ | grep -q 'class="landing"'; then
     log "Landing page health check passed." "SUCCESS"
 else
     log "Landing page health check failed." "ERROR"
